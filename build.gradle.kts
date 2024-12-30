@@ -35,7 +35,13 @@ gradlePlugin {
         create("jarstrap") {
             id = "${group}.${rootProject.name}"
             implementationClass = "io.github.wasabithumb.jarstrap.plugin.JARStrapPlugin"
+            displayName = "JARStrap"
             description = project.description
+            website = "https://github.com/WasabiThumb/jarstrap-gradle-plugin"
+            vcsUrl = "https://github.com/WasabiThumb/jarstrap-gradle-plugin"
+            tags = listOf(
+                "publishing", "jar", "exe", "elf", "desktop"
+            )
         }
     }
 }
