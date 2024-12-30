@@ -20,6 +20,9 @@ jarstrap {
     /* Strip debug symbols */
     release = true
 
+    /* Allow JARStrap to install MinGW for Windows */
+    autoInstall = true
+
     /* Build for 64-bit */
     target("amd64") {
         x64 = true
